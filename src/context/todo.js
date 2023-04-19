@@ -26,7 +26,7 @@ function Provider({ children }) {
     const updateToDo = [
       ...todos, { toDoName: addTodo, isComplite: false, id: Math.floor(Math.random() * 9999) }
     ];
-    createLocalStorage('toDos', todos)
+    createLocalStorage('toDos', updateToDo)
     setTodos(updateToDo);
   }
 
